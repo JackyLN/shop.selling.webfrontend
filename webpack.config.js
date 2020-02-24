@@ -1,5 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-
+const appConfig = require('./config.json');
 
 module.exports = {
   entry: './src/index.js',
@@ -44,5 +44,10 @@ module.exports = {
       template: "./src/index.html",
       filename: "./index.html"
     })
-  ]
+  ],
+
+  devServer: {
+    compress: true,
+    public: appConfig.serverUrl
+  }
 };

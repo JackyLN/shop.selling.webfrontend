@@ -48,6 +48,6 @@ module.exports = {
 
   devServer: {
     compress: true,
-    public: appConfig.serverUrl
+    public: appConfig.serverheader
   }
 };

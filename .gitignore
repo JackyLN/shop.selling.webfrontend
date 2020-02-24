@@ -19,6 +19,9 @@ psd
 thumb
 sketch
 
+# config webpack json file
+config.json
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json

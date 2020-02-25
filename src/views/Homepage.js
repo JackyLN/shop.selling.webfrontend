@@ -171,7 +171,7 @@ const HomePage = (props) => {
         </Container>
         <Container className="section">
           <h2 className="text-success title-section">Trading partners</h2>
-          <FlagCarousel type="flag"/>
+          <FlagCarousel type="flag" speed="2000" />
         </Container>
 
         <Container className="section border-bottom">
@@ -319,7 +319,7 @@ const HomePage = (props) => {
 
         <Container className="section">
           <h2 className="text-success title-section">Brands</h2>
-          <FlagCarousel type="brand" />
+          <FlagCarousel type="brand" speed="5000" />
         </Container>
       </div>
       <PageFooter />

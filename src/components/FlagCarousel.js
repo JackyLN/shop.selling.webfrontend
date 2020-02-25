@@ -106,7 +106,7 @@ const FlagCarousel = (props) => {
         draggable={false}
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={2000}
+        autoPlaySpeed={props.speed}
         customTransition="transform 500ms ease-in-out"
         containerClass="carousel-container"
       >

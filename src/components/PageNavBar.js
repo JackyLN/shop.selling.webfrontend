@@ -47,10 +47,10 @@ const PageNavBar = (props) => {
         <NavbarBrand className="nav-logo" href="/"><img className="img-responsive" src={logo}/></NavbarBrand>
         <Nav className="mr-auto" navbar>
           <NavItem>
-            <NavLink tag={RRNavLink} to="/" activeClassName="active">Home</NavLink>
+            <NavLink tag={RRNavLink} to="/">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/components/">About Us</NavLink>
+            <NavLink tag={RRNavLink} to="/about">About VIS</NavLink>
           </NavItem>
           <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
@@ -76,7 +76,7 @@ const PageNavBar = (props) => {
             <NavLink to="/components/">News</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={RRNavLink} to="/contactus" activeClassName="active">Contact Us</NavLink>
+            <NavLink tag={RRNavLink} to="/contact">Contact Us</NavLink>
           </NavItem>
         </Nav>
         <Nav className="mr-auto" pills>

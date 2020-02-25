@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import PageNavBar from "../components/PageNavBar";
+import PageFooter from "../components/PageFooter";
 import "../styles/skeleton.scss";
 
 class ContactUs extends Component {
@@ -31,6 +32,7 @@ class ContactUs extends Component {
           <input type="text"></input>
         test
         </div>
+        <PageFooter />
       </div>
     )
   }

@@ -174,7 +174,7 @@ const HomePage = (props) => {
           <FlagCarousel type="flag" speed="2000" />
         </Container>
 
-        <Container className="section border-bottom">
+        <Container className="section border-bottom bg-alternate">
           <h2 className="text-success title-section">Frequent asked questions</h2>
           <Row>
             <Col className="col-6" >

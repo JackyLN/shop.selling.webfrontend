@@ -13,6 +13,7 @@ library.add(fab, faCheckSquare, faCoffee, faSignInAlt, faUserPlus);
 const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
 //Pages
 const HomePage = React.lazy(() => import('./views/Homepage'));
+const AboutUs = React.lazy(() => import('./views/AboutUs'));
 const ContactUs = React.lazy(() => import('./views/ContactUs'));
 
 
@@ -23,7 +24,8 @@ class App extends Component {
       <HashRouter>
           <React.Suspense fallback={loading()}>
             <Switch>
-              <Route exact path="/contactus" name="Contact Us" render={props => <ContactUs {...props}/>} />
+              <Route exact path="/contact" name="Contact Us" render={props => <ContactUs {...props}/>} />
+              <Route exact path="/about" name="About Us" render={props => <AboutUs {...props}/>} />
               <Route path="/" name="Home" render={props => <HomePage {...props}/>} />            
             </Switch>
           </React.Suspense>

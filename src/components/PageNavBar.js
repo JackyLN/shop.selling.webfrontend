@@ -52,7 +52,7 @@ const PageNavBar = (props) => {
           <NavItem>
             <NavLink tag={RRNavLink} to="/about">About VIS</NavLink>
           </NavItem>
-          <UncontrolledDropdown nav inNavbar>
+          {/* <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
               Product
             </DropdownToggle>
@@ -77,14 +77,18 @@ const PageNavBar = (props) => {
           </NavItem>
           <NavItem>
             <NavLink tag={RRNavLink} to="/contact">Contact Us</NavLink>
-          </NavItem>
+          </NavItem> */}
         </Nav>
         <Nav className="mr-auto" pills>
           <NavItem>
+            <div className="d-inline-block mr-2">
             <Button color="success"><FontAwesomeIcon icon="sign-in-alt" /> Login</Button>
+            </div>
           </NavItem>
           <NavItem>
+            <div className="d-inline-block mr-2">
             <Button color="primary"><FontAwesomeIcon icon="user-plus" /> Signup</Button>
+            </div>
           </NavItem>
           
         </Nav>
